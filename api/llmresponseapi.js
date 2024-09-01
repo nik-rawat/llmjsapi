@@ -2,6 +2,8 @@ const express = require('express');
 const serverless = require('serverless-http'); 
 const app = express();
 
+app.use(express.json());
+
 // Define the endpoint for GET requests
 app.get('/api/extract_intent_entities', (req, res) => {
   const response = {
