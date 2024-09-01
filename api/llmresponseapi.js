@@ -2,9 +2,8 @@ const express = require('express');
 const serverless = require('serverless-http'); 
 const app = express();
 
-app.use(express.json());
-
-app.post('/api/extract_intent_entities', (req, res) => {
+// Define the endpoint for GET requests
+app.get('/api/extract_intent_entities', (req, res) => {
   const response = {
     "intent": "send",
     "entities": {
@@ -15,6 +14,5 @@ app.post('/api/extract_intent_entities', (req, res) => {
   };
   res.json(response);
 });
-
 
 module.exports.handler = serverless(app);
