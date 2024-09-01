@@ -1,5 +1,5 @@
 const express = require('express');
-const serverless = require('serverless-http');
+const serverless = require('serverless-http'); 
 const app = express();
 
 app.use(express.json());
@@ -17,4 +17,4 @@ app.post('/api/extract_intent_entities', (req, res) => {
 });
 
 module.exports = app;
-module.exports.handler = serverless(app); // Export the serverless function
+module.exports.handler = serverless(app);
