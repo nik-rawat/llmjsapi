@@ -2,7 +2,7 @@ const axios = require('axios');
 
 const sendRequest = async () => {
   try {
-    const response = await axios.post('http://localhost:8000/extract_intent_entities', {
+    const response = await axios.post('https://llmjsapi-d1anands-projects.vercel.app/', {
       text: "Any input text here."
     });
 
