@@ -12,5 +12,4 @@ const sendRequest = async () => {
   }
 };
 
-// Run the request function
 sendRequest();
