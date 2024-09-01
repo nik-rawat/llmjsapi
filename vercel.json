@@ -1,0 +1,16 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "api/llmresponseapi.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/api/extract_intent_entities",
+        "dest": "api/llmresponseapi.js"
+      }
+    ]
+  }
+  
